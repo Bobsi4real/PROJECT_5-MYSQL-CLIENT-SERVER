@@ -6,7 +6,7 @@ Launch two ubuntu EC2 instances in AWS and name them: mysql server and mysql cli
 ![Image](./Images/instances.png)
 
 ### Step 2 - Update the repository
-Use the command below to update the repository of the Ubunttu OS
+Use the command below to update the repository of the Ubuntu OS
 `sudo apt update && sudo apt upgrade -y` 
 
 ### Step 3 - Installing MySQL Server
