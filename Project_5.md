@@ -9,27 +9,27 @@ Launch two ubuntu EC2 instances in AWS and name them: mysql server and mysql cli
 Use the command below to update the repository of the Ubuntu OS
 `sudo apt update && sudo apt upgrade -y` 
 
-### Step 3 - Installing MySQL Server
+### Step 3a - Installing MySQL Server
 Install SQL Server software on the EC2 instance labelled MySQL Server by running the command below.
 
 `sudo apt install mysql-server -y`
 
 ![Image](./Images/mysql_server.png)
 
-### Step 3 - Installing MySQL Client
+### Step 3b - Installing MySQL Client
 On the second  EC2 instance labelled  MySQL Client, install MySQL Client software with the command below
 
 `sudo apt install mysql-client -y`
 
 ![Image](./Images/mysql_server_client.png)
 
-### Step 4 - Cnfigure MySQL Client EC2 instance to allow port 3306
+### Step 4 - Configure MySQL Client EC2 instance to allow port 3306
 Before you can receive mysql client traffic on your mysql server, you need make sure your security group settings on AWS allows port 3306 traffic - the default MySQL server TCP port. For extra security, do not allow all IP addresses to reach your mysql server.
 
 ### Step 5 - Creating Database on MySQL Server
 For mysql client to gain remote access to mysql server, we need to create and database and a user on mysql server.
 
- - Open the MySQL console by typing:
+ - Open the MySQL console by typing the command below:
 
 `sudo mysql`
 
